@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Me!</title>
+	<title>Amanda's Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Roboto+Condensed:bold"
+	href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700">
+</head>
+<body>
+<div id="wrapper">
+			<div id="header">
+				<div id="nav">
+				<a href="home.html">Home</a> &nbsp &nbsp &nbsp &nbsp
+				<a href="about.html"> About </a>&nbsp &nbsp &nbsp &nbsp
+				<a href="facebook.com/amandagreynolds">Facebook</a>
+			</div>
+		<div id="name">
+			<a href="home.html" id="amanda">AMANDA REYNOLDS</a>
+		</div>
+	</div>
+
+<div id="form">
+<p id="hit"> Hit Me Up! </p>
+<form>
+  <span class="input"> Name: </span> <br>
+  <input type="text" name="firstname"><br>
+ <span class="input"> Message: <br></span><br>
+<textarea name="contact" cols="20" rows="4"></textarea><br/><br>
+ <span class="input"> Return Email: </span><br>
+  <input type="text" name="return"><br><br>
+ <input type="submit" value="Submit">
+</form>
+</div>
+
+<div id ="talk">
+	<div id="container1">
+	<span> Here are some things we could chat about! </span>
+	<ol>
+		<li> Why we are still entertaining the idea Donald Trump will be president</li>
+		<li> How adorable fluffy animals falling over are </li>
+		<li> The sub-youtube genre "Dads falling off boats" </li>
+		<li> Internet videos from middle school you just remembered </li>
+		<li> How "natural gas" is such a great PR spin </li>
+		<li> Cool places to eat in Detroit </li>
+		<li><div id="result"></div><input type="text" placeholder="What Else?" id="input"></li>
+		
+<input type="submit" id="sub" value="Add"/>
+	</ol>
+</div>
+</div>
+<script language="javascript">
+var sub = document.getElementById("sub");
+sub.addEventListener('click',function change(){
+        var text = document.getElementById("input").value;
+        var pretext = text+"!!!";
+        document.getElementById("result").innerHTML=pretext;
+
+});
+</script>
+</body>
+</html>
